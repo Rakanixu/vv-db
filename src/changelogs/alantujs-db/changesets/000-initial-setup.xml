@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="root (generated)" id="1499259544528-1">
+        <createSequence sequenceName="admission_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-2">
+        <createSequence sequenceName="admission_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-3">
+        <createSequence sequenceName="auction_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-4">
+        <createSequence sequenceName="auction_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-5">
+        <createSequence sequenceName="bid_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-6">
+        <createSequence sequenceName="bid_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-7">
+        <createSequence sequenceName="donation_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-8">
+        <createSequence sequenceName="donation_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-9">
+        <createSequence sequenceName="event_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-10">
+        <createSequence sequenceName="event_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-11">
+        <createSequence sequenceName="event_location_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-12">
+        <createSequence sequenceName="event_location_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-13">
+        <createSequence sequenceName="event_type_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-14">
+        <createSequence sequenceName="event_type_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-15">
+        <createSequence sequenceName="image_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-16">
+        <createSequence sequenceName="named_guest_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-17">
+        <createSequence sequenceName="named_guest_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-18">
+        <createSequence sequenceName="named_guest_media_type_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-19">
+        <createSequence sequenceName="named_guest_media_type_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-20">
+        <createSequence sequenceName="participant_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-21">
+        <createSequence sequenceName="participant_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-22">
+        <createSequence sequenceName="payment_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-23">
+        <createSequence sequenceName="payment_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-24">
+        <createSequence sequenceName="poll_entry_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-25">
+        <createSequence sequenceName="poll_entry_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-26">
+        <createSequence sequenceName="poll_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-27">
+        <createSequence sequenceName="poll_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-28">
+        <createSequence sequenceName="principal_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-29">
+        <createSequence sequenceName="principal_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-30">
+        <createSequence sequenceName="question_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-31">
+        <createSequence sequenceName="question_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-32">
+        <createSequence sequenceName="question_topic_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-33">
+        <createSequence sequenceName="question_topic_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-34">
+        <createSequence sequenceName="quiz_entry_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-35">
+        <createSequence sequenceName="quiz_entry_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-36">
+        <createSequence sequenceName="quiz_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-37">
+        <createSequence sequenceName="quiz_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-38">
+        <createSequence sequenceName="role_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-39">
+        <createSequence sequenceName="role_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-40">
+        <createSequence sequenceName="slider_image_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-41">
+        <createSequence sequenceName="user_account_id_seq"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-42">
+        <createSequence sequenceName="user_account_id_seq1"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-43">
+        <createTable tableName="admission">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="admission_pkey"/>
+            </column>
+            <column name="event_id" type="INT"/>
+            <column name="title" type="VARCHAR(150)"/>
+            <column name="subtitle" type="VARCHAR(150)"/>
+            <column name="price" type="numeric(10, 5)"/>
+            <column name="description" type="TEXT"/>
+            <column name="icon" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-44">
+        <createTable tableName="auction">
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR(150)"/>
+            <column name="opened_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="closed_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="description" type="TEXT"/>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="auction_id_pk"/>
+            </column>
+            <column name="event_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-45">
+        <createTable tableName="bid">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount" type="numeric(10, 5)"/>
+            <column name="type" type="INT"/>
+            <column name="auction_id" type="INT"/>
+            <column name="useraccount_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-46">
+        <createTable tableName="donation">
+            <column name="firstname" type="VARCHAR(150)"/>
+            <column name="lastname" type="VARCHAR(150)"/>
+            <column name="street" type="VARCHAR(200)"/>
+            <column name="city" type="VARCHAR(200)"/>
+            <column name="state" type="VARCHAR(200)"/>
+            <column name="zip" type="VARCHAR(20)"/>
+            <column name="country" type="VARCHAR(200)"/>
+            <column name="phone" type="VARCHAR(30)"/>
+            <column name="email" type="VARCHAR(200)"/>
+            <column name="job_state" type="VARCHAR(150)"/>
+            <column name="employer" type="VARCHAR(150)"/>
+            <column name="occupation" type="VARCHAR(150)"/>
+            <column name="birthday" type="INT"/>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="donation_id_pk"/>
+            </column>
+            <column name="recurring" type="BOOL"/>
+            <column name="recurring_end" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="source" type="VARCHAR(200)"/>
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-47">
+        <createTable tableName="event">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="event_id_pk"/>
+            </column>
+            <column name="title" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="notes" type="TEXT"/>
+            <column name="location" type="VARCHAR(200)"/>
+            <column name="preview_img" type="VARCHAR(255)"/>
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="deleted_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="event_background" type="VARCHAR(255)"/>
+            <column name="login_required" type="BOOL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_account_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_type_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="latitude" type="numeric(10, 5)"/>
+            <column name="longitude" type="numeric(10, 5)"/>
+            <column name="date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-48">
+        <createTable tableName="event_location">
+            <column name="title" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="remark" type="TEXT"/>
+            <column name="street" type="VARCHAR(200)"/>
+            <column name="zip" type="VARCHAR(20)"/>
+            <column name="city" type="VARCHAR(200)"/>
+            <column name="opening_hours" type="VARCHAR(200)"/>
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="event_location_id_pk"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-49">
+        <createTable tableName="event_type">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="event_type_pkey"/>
+            </column>
+            <column name="title" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="icon" type="VARCHAR(255)"/>
+            <column name="notes" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-50">
+        <createTable tableName="named_guest">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="named_guest_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="main_media_type_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="main_media" type="VARCHAR(150)"/>
+            <column name="media_start_time" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="media_end_time" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="description" type="TEXT"/>
+            <column name="event_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="main_media_file" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-51">
+        <createTable tableName="named_guest_media_type">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="named_guest_media_type_pkey"/>
+            </column>
+            <column name="title" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-52">
+        <createTable tableName="participant">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="participant_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(150)"/>
+            <column name="event_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="avatar" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-53">
+        <createTable tableName="payment">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="payment_pkey"/>
+            </column>
+            <column name="amount" type="numeric(10, 5)"/>
+            <column name="token" type="VARCHAR(150)"/>
+            <column name="description" type="TEXT"/>
+            <column name="user_account_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-54">
+        <createTable tableName="poll">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="poll_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="event_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-55">
+        <createTable tableName="poll_entry">
+            <column name="title" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="count" type="INT"/>
+            <column name="description" type="TEXT"/>
+            <column name="poll_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="poll_entry_id_pk"/>
+            </column>
+            <column name="icon" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-56">
+        <createTable tableName="principal">
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="domain" type="VARCHAR(255)"/>
+            <column name="description" type="TEXT"/>
+            <column name="design" type="VARCHAR(150)"/>
+            <column name="primary_color" type="VARCHAR(20)"/>
+            <column name="secondary_color" type="VARCHAR(20)"/>
+            <column name="tags" type="TEXT"/>
+            <column name="design_notes" type="TEXT"/>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="principal_id_pk"/>
+            </column>
+            <column name="logo" type="VARCHAR(255)"/>
+            <column name="background" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-57">
+        <createTable tableName="principal_event_types_allowed">
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_type_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-58">
+        <createTable tableName="question">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="question_pkey"/>
+            </column>
+            <column name="mesage" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="question_topic_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-59">
+        <createTable tableName="question_topic">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="question_topic_pkey"/>
+            </column>
+            <column name="topic" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="event_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-60">
+        <createTable tableName="quiz">
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="event_id" type="INT"/>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="quiz_id_pk"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-61">
+        <createTable tableName="quiz_entry">
+            <column name="answer_one" type="VARCHAR(150)"/>
+            <column name="answer_two" type="VARCHAR(150)"/>
+            <column name="answer_three" type="VARCHAR(150)"/>
+            <column name="answer_four" type="VARCHAR(150)"/>
+            <column name="right_solution" type="INT"/>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="quiz_entry_id_pk"/>
+            </column>
+            <column name="quiz_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="question" type="VARCHAR(200)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-62">
+        <createTable tableName="role">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="role_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-63">
+        <createTable tableName="slider_image">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="image_pkey"/>
+            </column>
+            <column name="title" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(150)"/>
+            <column name="img" type="VARCHAR(255)"/>
+            <column name="event_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-64">
+        <createTable tableName="user_account">
+            <column name="username" type="VARCHAR(150)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="salt" type="VARCHAR(64)"/>
+            <column name="password" type="VARCHAR(128)"/>
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="language" type="VARCHAR(2)"/>
+            <column name="last_login_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="last_login_ip" type="VARCHAR(16)"/>
+            <column name="last_activity_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="last_logout_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="deleted_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="principal_id" type="INT"/>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="user_account_id_pk"/>
+            </column>
+            <column name="role_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="avatar" type="VARCHAR(255)"/>
+            <column name="timezone" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-65">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="admission" constraintName="admission_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-66">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="auction" constraintName="auction_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-67">
+        <addForeignKeyConstraint baseColumnNames="auction_id" baseTableName="bid" constraintName="bid_auction_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auction"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-68">
+        <addForeignKeyConstraint baseColumnNames="useraccount_id" baseTableName="bid" constraintName="bid_user_account_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_account"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-69">
+        <addForeignKeyConstraint baseColumnNames="payment_id" baseTableName="donation" constraintName="donation_payment_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="payment"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-70">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="donation" constraintName="donation_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-71">
+        <addForeignKeyConstraint baseColumnNames="event_type_id" baseTableName="event" constraintName="event_event_type_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event_type"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-72">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="event_location" constraintName="event_location_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-73">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="event" constraintName="event_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-74">
+        <addForeignKeyConstraint baseColumnNames="user_account_id" baseTableName="event" constraintName="event_user_account_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_account"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-75">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="named_guest" constraintName="named_guest_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-76">
+        <addForeignKeyConstraint baseColumnNames="main_media_type_id" baseTableName="named_guest" constraintName="named_guest_named_guest_media_type_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="named_guest_media_type"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-77">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="participant" constraintName="participant_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-78">
+        <addForeignKeyConstraint baseColumnNames="user_account_id" baseTableName="payment" constraintName="payment_user_account_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_account"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-79">
+        <addForeignKeyConstraint baseColumnNames="poll_id" baseTableName="poll_entry" constraintName="poll_entry_poll_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="poll"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-80">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="poll" constraintName="poll_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-81">
+        <addForeignKeyConstraint baseColumnNames="event_type_id" baseTableName="principal_event_types_allowed" constraintName="principal_events_allowed_event_type_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event_type"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-82">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="principal_event_types_allowed" constraintName="principal_events_allowed_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-83">
+        <addForeignKeyConstraint baseColumnNames="question_topic_id" baseTableName="question" constraintName="question_question_topic_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="question_topic"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-84">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="question_topic" constraintName="question_topic_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-85">
+        <addForeignKeyConstraint baseColumnNames="quiz_id" baseTableName="quiz_entry" constraintName="quiz_entry_quiz_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="quiz"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-86">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="quiz" constraintName="quiz_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-87">
+        <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="slider_image" constraintName="slider_image_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-88">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="user_account" constraintName="user_account_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="root (generated)" id="1499259544528-89">
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="user_account" constraintName="user_account_role_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="role"/>
+    </changeSet>
+</databaseChangeLog>
