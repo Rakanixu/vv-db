@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+  <changeSet author="paguirre" id="1500620930460-01">
+    <insert schemaName="public"
+            tableName="role">
+      <column name="id" value="1"/>
+      <column name="name" value="root"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1500620930460-02">
+    <insert schemaName="public"
+            tableName="role">
+      <column name="id" value="2"/>
+      <column name="name" value="manager"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1500620930460-03">
+    <insert schemaName="public"
+            tableName="role">
+      <column name="id" value="3"/>
+      <column name="name" value="event_organiser"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1500620930460-04">
+    <insert schemaName="public"
+            tableName="role">
+      <column name="id" value="4"/>
+      <column name="name" value="guest"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1500620930460-05">
+    <insert schemaName="public"
+            tableName="role">
+      <column name="id" value="5"/>
+      <column name="name" value="vip_guest"/>
+    </insert>
+  </changeSet>
+
+  <changeSet author="paguirre" id="1500620930460-06">
+    <insert schemaName="public"
+            tableName="principal">
+      <column name="id" value="1"/>
+      <column name="name" value="root"/>
+      <column name="domain" value="root"/>
+      <column name="description" value="root user for manage them all"/>
+      <column name="design" value=""/>
+      <column name="primary_color" value="root"/>
+      <column name="secondary_color" value="root"/>
+      <column name="tags" value=""/>
+      <column name="design_notes" value=""/>
+      <column name="logo" value="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAbcAAAAJDM1MWE0OTQ5LTc3OTQtNGM4Yi05OTYzLWMyNGY5NjY0OWM0Mg.png"/>
+      <column name="background" value="http://www.sociedadtv.com/wp-content/uploads/2017/07/357-vents.jpg"/>
+      <column name="created_at" value="${now}"/>
+    </insert>
+  </changeSet>
+
+  <changeSet author="paguirre" id="1500620930460-07">
+    <insert schemaName="public"
+            tableName="user_account">
+      <column name="id" value="1"/>
+      <column name="username" value="root"/>
+      <column name="email" value="root"/>
+      <column name="salt" value=""/>
+      <column name="password" value="99adc231b045331e514a516b4b7680f588e3823213abe901738bc3ad67b2f6fcb3c64efb93d18002588d3ccc1a49efbae1ce20cb43df36b38651f11fa75678e8"/>
+      <column name="created_at" value="${now}"/>
+      <column name="updated_at" value="${now}"/>
+      <column name="language" value="EN"/>
+      <column name="last_login_at" value="${now}"/>
+      <column name="last_login_ip" value="127.0.0.1"/>
+      <column name="last_activity_at" value="${now}"/>
+      <column name="last_logout_at" value="${now}"/>
+      <column name="avatar" value="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAbcAAAAJDM1MWE0OTQ5LTc3OTQtNGM4Yi05OTYzLWMyNGY5NjY0OWM0Mg.png"/>
+      <column name="principal_id" value="1"/>
+      <column name="role_id" value="1"/>
+    </insert>
+  </changeSet>  
+</databaseChangeLog>
