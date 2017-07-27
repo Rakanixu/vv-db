@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+  <changeSet id="1501136867059-01" author="paguirre">
+    <addColumn schemaName="public"
+               tableName="event">
+      <column name="chat_highlight" type="BOOL"/>
+    </addColumn>
+  </changeSet>  
+  <changeSet id="1501136867059-02" author="paguirre">  
+    <addColumn schemaName="public"
+               tableName="event">
+      <column name="chat_with_user_image" type="BOOL"/>
+    </addColumn>
+  </changeSet>
+  <changeSet id="1501136867059-03" author="paguirre">
+    <addColumn schemaName="public"
+               tableName="event">
+      <column name="pose_question" type="BOOL"/>
+    </addColumn>
+  </changeSet>
+  <changeSet id="1501136867059-04" author="paguirre">
+    <addColumn schemaName="public"
+               tableName="event">
+      <column name="chat_shown_status_bar" type="BOOL"/>
+    </addColumn>
+  </changeSet>
+  <changeSet id="1501136867059-05" author="paguirre">
+    <addColumn schemaName="public"
+               tableName="event">
+      <column name="stage_moment_webcam" type="BOOL"/>
+    </addColumn>
+  </changeSet>  
+</databaseChangeLog>
