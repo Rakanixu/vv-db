@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+  <changeSet id="1500619888870-01" author="paguirre">
+    <addColumn schemaName="public"
+               tableName="principal">
+      <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+    </addColumn>
+  </changeSet>  
+  <changeSet id="1500619888870-02" author="paguirre">  
+    <addColumn schemaName="public"
+               tableName="payment">
+      <column name="event_id" type="INT">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+  </changeSet>
+  <changeSet id="1500619888870-03" author="paguirre">
+    <addForeignKeyConstraint baseColumnNames="event_id" baseTableName="payment" constraintName="payment_event_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="event"/>
+  </changeSet>
+</databaseChangeLog>
