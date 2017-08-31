@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+  <changeSet author="paguirre" id="1504181594165-01">
+    <createTable tableName="poll_entry_answer">
+      <column autoIncrement="true" name="id" type="SERIAL">
+        <constraints primaryKey="true" primaryKeyName="poll_entry_answer_id_pkey"/>
+      </column>
+      <column name="poll_entry_id" type="INT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="user_account_id" type="INT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="answer" type="VARCHAR(200)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>  
+  <changeSet author="paguirre" id="1504181594165-02">
+    <addForeignKeyConstraint baseColumnNames="poll_entry_id" baseTableName="poll_entry_answer" constraintName="poll_entry_answer_poll_entry_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="poll_entry"/>
+  </changeSet>
+  <changeSet author="paguirre" id="1504181594165-03">
+    <addForeignKeyConstraint baseColumnNames="user_account_id" baseTableName="poll_entry_answer" constraintName="poll_entry_answer_user_account_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_account"/>
+  </changeSet>
+</databaseChangeLog>
