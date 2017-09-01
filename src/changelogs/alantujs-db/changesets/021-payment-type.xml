@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+  <changeSet author="paguirre" id="1504250925255-01">
+    <createTable tableName="payment_type">
+      <column autoIncrement="true" name="id" type="SERIAL">
+        <constraints primaryKey="true" primaryKeyName="payment_type_id_pkey"/>
+      </column>
+      <column name="type" type="VARCHAR(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="description" type="VARCHAR(200)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-02">
+    <addColumn schemaName="public"
+               tableName="payment">
+      <column name="payment_type_id" type="INT">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-03">
+    <addForeignKeyConstraint baseColumnNames="payment_type_id" baseTableName="payment" constraintName="payment_payment_type_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="payment_type"/>
+  </changeSet>
+
+  <changeSet author="paguirre" id="1504250925255-04">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="1"/>
+      <column name="type" value="admission"/>
+      <column name="description" value="Payment from admission fee"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-05">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="2"/>
+      <column name="type" value="donation"/>
+      <column name="description" value="Payment from donation"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-06">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="3"/>
+      <column name="type" value="highlight_chat_message"/>
+      <column name="description" value="Payment from highlighting chat message"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-07">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="4"/>
+      <column name="type" value="highlight_picture"/>
+      <column name="description" value="Payment from highlighting picture"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-08">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="5"/>
+      <column name="type" value="highlight_message_status_bar"/>
+      <column name="description" value="Payment from highlighting message in status bar"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-09">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="6"/>
+      <column name="type" value="stage_moment_webcam"/>
+      <column name="description" value="Payment from stage moment webcam"/>
+    </insert>
+  </changeSet>
+  <changeSet author="paguirre" id="1504250925255-10">
+    <insert schemaName="public"
+            tableName="payment_type">
+      <column name="id" value="7"/>
+      <column name="type" value="ask_question"/>
+      <column name="description" value="Payment from asking a question"/>
+    </insert>
+  </changeSet>    
+</databaseChangeLog>
