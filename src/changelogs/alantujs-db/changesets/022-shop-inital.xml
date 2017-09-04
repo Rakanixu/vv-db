@@ -1,0 +1,51 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="aravindanve (generated)" id="1504524953471-1">
+        <createTable tableName="shop_category">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="shop_category_pkey"/>
+            </column>
+            <column name="moltin_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504524953471-2">
+        <createTable tableName="shop_collection">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="shop_collection_pkey"/>
+            </column>
+            <column name="moltin_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504524953471-3">
+        <createTable tableName="shop_product">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="shop_product_pkey"/>
+            </column>
+            <column name="moltin_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="principal_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504524953471-4">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="shop_category" constraintName="shop_category_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504524953471-5">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="shop_collection" constraintName="shop_collection_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504524953471-6">
+        <addForeignKeyConstraint baseColumnNames="principal_id" baseTableName="shop_product" constraintName="shop_product_principal_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="principal"/>
+    </changeSet>
+</databaseChangeLog>
