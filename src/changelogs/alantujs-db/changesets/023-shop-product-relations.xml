@@ -1,0 +1,122 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="aravindanve (generated)" id="1504621908128-1">
+        <createTable tableName="shop_product_category">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="shop_product_category_pkey"/>
+            </column>
+            <column name="product_id" type="INT"/>
+            <column name="category_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-2">
+        <createTable tableName="shop_product_collection">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="shop_product_collection_pkey"/>
+            </column>
+            <column name="product_id" type="INT"/>
+            <column name="collection_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-3">
+        <createTable tableName="shop_product_price">
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="shop_product_price_pkey"/>
+            </column>
+            <column name="product_id" type="INT"/>
+            <column name="amount" type="numeric(10)"/>
+            <column name="currency" type="VARCHAR(3)"/>
+            <column name="includes_tax" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-4">
+        <addColumn tableName="shop_category">
+            <column name="name" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-5">
+        <addColumn tableName="shop_collection">
+            <column name="name" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-6">
+        <addColumn tableName="shop_product">
+            <column name="name" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-7">
+        <addColumn tableName="shop_category">
+            <column name="slug" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-8">
+        <addColumn tableName="shop_collection">
+            <column name="slug" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-9">
+        <addColumn tableName="shop_product">
+            <column name="slug" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-10">
+        <addColumn tableName="shop_category">
+            <column name="description" type="text"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-11">
+        <addColumn tableName="shop_collection">
+            <column name="description" type="text"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-12">
+        <addColumn tableName="shop_product">
+            <column name="sku" type="varchar(150 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-13">
+        <addColumn tableName="shop_product">
+            <column name="manage_stock" type="bool"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-14">
+        <addColumn tableName="shop_category">
+            <column name="status" type="varchar(10 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-15">
+        <addColumn tableName="shop_collection">
+            <column name="status" type="varchar(10 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-16">
+        <addColumn tableName="shop_product">
+            <column name="description" type="text"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-17">
+        <addColumn tableName="shop_product">
+            <column name="status" type="varchar(10 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-18">
+        <addColumn tableName="shop_product">
+            <column name="commodity_type" type="varchar(10 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-19">
+        <addForeignKeyConstraint baseColumnNames="category_id" baseTableName="shop_product_category" constraintName="shop_product_category_category_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="shop_category"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-20">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="shop_product_category" constraintName="shop_product_category_product_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="shop_product"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-21">
+        <addForeignKeyConstraint baseColumnNames="collection_id" baseTableName="shop_product_collection" constraintName="shop_product_collection_collection_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="shop_collection"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-22">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="shop_product_collection" constraintName="shop_product_collection_product_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="shop_product"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504621908128-23">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="shop_product_price" constraintName="shop_product_price_product_id_fk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="shop_product"/>
+    </changeSet>
+</databaseChangeLog>
