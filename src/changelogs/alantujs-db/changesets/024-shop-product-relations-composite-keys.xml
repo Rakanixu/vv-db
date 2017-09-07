@@ -1,0 +1,9 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="aravindanve (generated)" id="1504788164664-1">
+        <addUniqueConstraint columnNames="product_id, category_id" constraintName="shop_product_category_product_id_category_id_key" tableName="shop_product_category"/>
+    </changeSet>
+    <changeSet author="aravindanve (generated)" id="1504788164664-2">
+        <addUniqueConstraint columnNames="product_id, collection_id" constraintName="shop_product_collection_product_id_collection_id_key" tableName="shop_product_collection"/>
+    </changeSet>
+</databaseChangeLog>
